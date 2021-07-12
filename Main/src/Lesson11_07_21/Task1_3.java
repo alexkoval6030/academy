@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Task1_3 {
 	//Создайте число. Определите, является ли число четным или не четным,
-	//вывести текстовое сообщение
+	//вывести текстовое сообщение.
 	public static void main(String[] args) {
 		System.out.println("Введите число");
 		

@@ -49,7 +49,7 @@ public class Task1_0 {
 			System.out.println(12);
 			break;
 		default:
-			System.out.println("Такого месяца не существует");
+			System.out.println("Такого месяца не существует!");
 		}
 
 		scan.close();

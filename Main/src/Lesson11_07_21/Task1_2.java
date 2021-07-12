@@ -8,8 +8,7 @@ package Lesson11_07_21;
 // int j = 3;
 // int k = i + j;
 // System.out.println(i + "+" + j + "=" + k);
-//}
-//}
+
 public class Task1_2 {
 
 	public static void main(String[] args) {
