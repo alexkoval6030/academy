@@ -22,7 +22,5 @@ public class Task1_5 {
 		scan.close();
 	}
 
-}3875030 12345675
-15
-31
+}
 
