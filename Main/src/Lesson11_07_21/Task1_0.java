@@ -1,55 +1,55 @@
 package Lesson11_07_21;
-//Ввести через консоль название месяца
-//вывести номер месяца (использовать switch/case)
+//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ switch/case)
 
 import java.util.Scanner;
 
 public class Task1_0 {
 
 	public static void main(String[] args) {
-		System.out.println("Введите название месяца");
+		System.out.println("Р’РІРµРґРёС‚Рµ РЅР°Р·РІР°РЅРёРµ РјРµСЃСЏС†Р°");
 		Scanner scan = new Scanner(System.in);
 		String str = scan.nextLine();
 				
 		switch(str) {
-		case "Январь":
+		case "РЇРЅРІР°СЂСЊ":
 			System.out.println(1);
 			break;
-		case "Февраль":
+		case "Р¤РµРІСЂР°Р»СЊ":
 			System.out.println(2);
 			break;
-		case "Март":
+		case "РњР°СЂС‚":
 			System.out.println(3);
 			break;
-		case "Апрель":
+		case "РђРїСЂРµР»СЊ":
 			System.out.println(4);
 			break;
-		case "Май":
+		case "РњР°Р№":
 			System.out.println(5);
 			break;
-		case "Июнь":
+		case "РСЋРЅСЊ":
 			System.out.println(6);
 			break;
-		case "Июль":
+		case "РСЋР»СЊ":
 			System.out.println(7);
 			break;
-		case "Август":
+		case "РђРІРіСѓСЃС‚":
 			System.out.println(8);
 			break;
-		case "Сентябрь":
+		case "РЎРµРЅС‚СЏР±СЂСЊ":
 			System.out.println(9);
 			break;
-		case "Октябрь":
+		case "РћРєС‚СЏР±СЂСЊ":
 			System.out.println(10);
 			break;
-		case "Ноябрь":
+		case "РќРѕСЏР±СЂСЊ":
 			System.out.println(11);
 			break;
-		case "Декабрь":
+		case "Р”РµРєР°Р±СЂСЊ":
 			System.out.println(12);
 			break;
 		default:
-			System.out.println("Такого месяца не существует!");
+			System.out.println("РњРµСЃСЏС† РІРІРµРґС‘РЅ РЅРµРІРµСЂРЅРѕ");
 		}
 
 		scan.close();
