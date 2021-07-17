@@ -6,7 +6,7 @@ public class Task1 {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Введите сумму покупки и возраст покупателя");
+		System.out.println("Р’РІРµРґРёС‚Рµ СЃСѓРјРјСѓ РїРѕРєСѓРїРєРё Рё РІРѕР·СЂР°СЃС‚ РїРѕРєСѓРїР°С‚РµР»СЏ");
 		double i = scan.nextDouble();
 		double j = scan.nextDouble();
 		
