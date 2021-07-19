@@ -9,11 +9,12 @@ public class Application {
 		cat2.eat();
 		cat2.sleep();
 		cat2.walk();
-		cat1.grow();
-		cat1.grow();
-		cat1.grow();
-		System.out.println(cat1.getAge());
+        
+		for (int i = 0; i < 3; i++) {
+            cat1.grow();
+        }
 		
+		System.out.println("Возраст " + cat1.nickname + " равен " + cat1.getAge());
 	}
 
 }

@@ -3,6 +3,9 @@ package by.academy.classwork.lesson1;
 public class Cat {
 	int age;
 	String nickname;
+	private double money;
+    private char initials;
+    private boolean isHomeAnimal;
 	
 	public void grow() {
 		age++;
@@ -32,4 +35,27 @@ public class Cat {
 		this.nickname = nickname;
 	}
 
+	public double getMoney() {
+		return money;
+	}
+
+	public void setMoney(double money) {
+		this.money = money;
+	}
+
+	public char getInitials() {
+		return initials;
+	}
+
+	public void setInitials(char initials) {
+		this.initials = initials;
+	}
+
+	public boolean isHomeAnimal() {
+		return isHomeAnimal;
+	}
+
+	public void setHomeAnimal(boolean isHomeAnimal) {
+		this.isHomeAnimal = isHomeAnimal;
+	}
 }
