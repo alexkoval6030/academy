@@ -6,7 +6,6 @@ public class Cat {
 	int age;
 	String nickname;
 	
-	//shift+alt+s  
 	public Cat() {
 		super();
 		}

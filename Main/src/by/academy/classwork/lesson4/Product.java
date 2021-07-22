@@ -6,7 +6,7 @@ public class Product {
 	String name;
 	double price;
 	int quantity;
-	//
+ 
 	public Product(String name, double price, int quantity) {
 		super();
 		this.name = name;
