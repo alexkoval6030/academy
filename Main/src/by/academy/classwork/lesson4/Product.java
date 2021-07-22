@@ -14,6 +14,10 @@ public class Product {
 		this.quantity = quantity;
 	}
 	
+	public Product() {
+		super();
+	}
+	
 	public Product(String name, int quantity) {
 		double price = 15.5;
 		}
