@@ -17,7 +17,7 @@ public class Cat {
 	
 	public void sleep() {
 		System.out.println("Кот спит");
-	}
+		}
 	
 	public void eat() {
 		System.out.println("Кот ест");
@@ -58,4 +58,5 @@ public class Cat {
 	public void setHomeAnimal(boolean isHomeAnimal) {
 		this.isHomeAnimal = isHomeAnimal;
 	}
+	
 }
