@@ -2,11 +2,16 @@ package by.academy.classwork.lesson4;
 
 import java.util.Objects;
 
-public class Product {
-	String name;
-	double price;
-	int quantity;
- 
+public abstract class Product {
+	protected String name;
+	protected double price;
+	protected int quantity;
+	protected double calcPrice;
+
+	public Product() {
+		super();
+	}
+
 	public Product(String name, double price, int quantity) {
 		super();
 		this.name = name;
@@ -14,13 +19,11 @@ public class Product {
 		this.quantity = quantity;
 	}
 	
-	public Product() {
-		super();
+	protected abstract double discount();
+
+	public double calcPrice() {
+		return (1 - discount()) * price * quantity;
 	}
-	
-	public Product(String name, int quantity) {
-		double price = 15.5;
-		}
 
 	public String getName() {
 		return name;
@@ -76,7 +79,5 @@ public class Product {
 		builder.append("]");
 		return builder.toString();
 	}
-	
-	
 
 }
