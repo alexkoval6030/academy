@@ -1,6 +1,5 @@
 package by.academy.homework2;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Task1 {
@@ -12,7 +11,7 @@ public class Task1 {
         System.out.println("Введите второе слово: ");
         String secondWord = scan.nextLine();
         char[] firstWordArray = firstWord.toCharArray();
-        char[] secondWordArray = secondWord.toCharArray();
+        //char[] secondWordArray = secondWord.toCharArray();
 
         if ((firstWord.length() != secondWord.length())) {
             System.out.println("False");
@@ -20,7 +19,7 @@ public class Task1 {
             return;
         }
 
-        for (int i = 0; i < secondWordArray.length; i++) {
+        for (int i = 0; i < secondWord.length(); i++) {
             for (int j = 0; j < firstWordArray.length; j++) {
                 if (secondWord.charAt(i) == firstWord.charAt(j)) {
                     firstWordArray[j] = ' ';

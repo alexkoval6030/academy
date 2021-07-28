@@ -2,9 +2,19 @@ package by.academy.classwork.lesson4;
 
 import java.util.Objects;
 
-public class Car extends Vehicle {
+public class Car extends Product {
 	String modelOfCar;
 	int numberOfPassenger;
+
+	public Car() {
+		super();
+	}
+
+	public Car(String name, double price, int quantity, String modelOfCar, int numberOfPassenger) {
+		super(name, price, quantity);
+		this.modelOfCar = modelOfCar;
+		this.numberOfPassenger = numberOfPassenger;
+	}
 
 	@Override
 	public double discount() {
@@ -52,13 +62,7 @@ public class Car extends Vehicle {
 
 	@Override
 	public String toString() {
-		StringBuilder builder = new StringBuilder();
-		builder.append("Car [modelOfCar=");
-		builder.append(modelOfCar);
-		builder.append(", numberOfPassenger=");
-		builder.append(numberOfPassenger);
-		builder.append("]");
-		return builder.toString();
+		return "Car [modelOfCar=" + modelOfCar + ", numberOfPassenger=" + numberOfPassenger + "]";
 	}
 
 }
