@@ -1,4 +1,4 @@
-package by.academy.classwork.lesson4;
+package by.academy.classwork.deal;
 
 import java.util.Objects;
 
@@ -6,10 +6,7 @@ public class Car extends Product {
 	String modelOfCar;
 	int numberOfPassenger;
 
-	public Car() {
-		super();
-	}
-
+	
 	public Car(String name, double price, int quantity, String modelOfCar, int numberOfPassenger) {
 		super(name, price, quantity);
 		this.modelOfCar = modelOfCar;

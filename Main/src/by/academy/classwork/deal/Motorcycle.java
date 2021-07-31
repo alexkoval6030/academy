@@ -1,4 +1,4 @@
-package by.academy.classwork.lesson4;
+package by.academy.classwork.deal;
 
 import java.util.Objects;
 
@@ -6,10 +6,7 @@ public class Motorcycle extends Product {
 	protected String color;
 	protected double engineDisplacement;
 	
-	public Motorcycle() {
-		super();
-	}
-	
+		
 	public Motorcycle(String name, double price, int quantity, String color, double engineDisplacement) {
 		super(name, price, quantity);
 		this.color = color;

@@ -1,4 +1,4 @@
-package by.academy.classwork.lesson4;
+package by.academy.classwork.deal;
 
 import java.util.Objects;
 
@@ -6,12 +6,8 @@ public class User {
 	String nameUser;
 	double moneyUser;
 
-	public User() {
-		super();
-	}
-
+	
 	public User(String nameUser, double moneyUser) {
-		super();
 		this.nameUser = nameUser;
 		this.moneyUser = moneyUser;
 	}

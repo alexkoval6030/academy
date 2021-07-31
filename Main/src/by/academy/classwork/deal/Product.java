@@ -1,4 +1,4 @@
-package by.academy.classwork.lesson4;
+package by.academy.classwork.deal;
 
 import java.util.Objects;
 
@@ -8,12 +8,7 @@ public abstract class Product {
 	protected int quantity;
 	protected double calcPrice;
 
-	public Product() {
-		super();
-	}
-
-	public Product(String name, double price, int quantity) {
-		super();
+		public Product(String name, double price, int quantity) {
 		this.name = name;
 		this.price = price;
 		this.quantity = quantity;

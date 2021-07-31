@@ -1,4 +1,4 @@
-package by.academy.classwork.lesson4;
+package by.academy.classwork.deal;
 
 import java.util.Arrays;
 import java.util.Objects;
@@ -9,12 +9,7 @@ public class Deal {
 	protected User bayer;
 	protected String dealDate;
 
-	public Deal() {
-		super();
-	}
-
 	public Deal(Product[] products, User seller, User bayer, String dealDate) {
-		super();
 		this.products = products;
 		this.seller = seller;
 		this.bayer = bayer;
