@@ -25,8 +25,25 @@ public class Deal {
 		return calcFullPrice;
 	}
 
-	public Product[] getProducts() {
-		return products;
+	public void deleteProduct(String name) {
+		Product[] deleteProduct = new Product[products.length - 1];
+		int k = 0;
+
+		for (int i = 0; i < products.length; i++) {
+			if (products[i].getName() != name) {
+				deleteProduct[k] = products[i];
+			}
+		}
+
+		products = deleteProduct;
+	}
+
+	public void addProduct(Product product) {
+		Product[] addProduct = new Product[products.length + 1];
+		for (int i = 0; i < products.length; i++) {
+			addProduct[i] = products[i];
+		}
+		addProduct[products.length - 1] = product;
 	}
 
 	public void setProducts(Product[] products) {
