@@ -1,19 +1,23 @@
 package by.academy.classwork.deal;
 
+import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.Objects;
+
 
 public class Deal {
 	protected Product[] products;
 	protected User seller;
 	protected User bayer;
-	protected String dealDate;
+	protected LocalDate dealDate;
+	protected LocalDate deadlineDate;
 
-	public Deal(Product[] products, User seller, User bayer, String dealDate) {
+	public Deal(Product[] products, User seller, User bayer, LocalDate dealDate) {
 		this.products = products;
 		this.seller = seller;
 		this.bayer = bayer;
 		this.dealDate = dealDate;
+		this.deadlineDate = dealDate.plusDays(10);
 	}
 
 	public double calcFullPrice() {
@@ -48,19 +52,17 @@ public class Deal {
 		}
 	}
 
-	public void addProduct(String name, double price, int quantity) {
+	public void addProduct(Product product) {
 		for (int i = 0; i < products.length; i++) {
-			if (products[i].getName() == name) {
-				products[i].setQuantity(products[i].getQuantity() + quantity);
-				break;
+			if (products[i].equals(product)) {
+				products[i].setQuantity(products[i].getQuantity() + product.getQuantity());
+				return;
 			}
 		}
 		
 		Product[] addProduct = Arrays.copyOf(products, products.length + 1);
-		addProduct[addProduct.length - 1] = addProduct[0];
-		addProduct[addProduct.length - 1].setName(name);
-		addProduct[addProduct.length - 1].setPrice(price);
-		addProduct[addProduct.length - 1].setQuantity(quantity);		
+		addProduct[addProduct.length - 1] = product;
+				
 		products = addProduct;
 	}
 
@@ -84,11 +86,13 @@ public class Deal {
 		this.bayer = bayer;
 	}
 
-	public String getDealDate() {
+	
+
+	public LocalDate getDealDate() {
 		return dealDate;
 	}
 
-	public void setDealDate(String dealDate) {
+	public void setDealDate(LocalDate dealDate) {
 		this.dealDate = dealDate;
 	}
 
@@ -97,7 +101,7 @@ public class Deal {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + Arrays.hashCode(products);
-		result = prime * result + Objects.hash(bayer, dealDate, seller);
+		result = prime * result + Objects.hash(bayer, deadlineDate, dealDate, seller);
 		return result;
 	}
 
@@ -110,8 +114,9 @@ public class Deal {
 		if (getClass() != obj.getClass())
 			return false;
 		Deal other = (Deal) obj;
-		return Objects.equals(bayer, other.bayer) && Objects.equals(dealDate, other.dealDate)
-				&& Arrays.equals(products, other.products) && Objects.equals(seller, other.seller);
+		return Objects.equals(bayer, other.bayer) && Objects.equals(deadlineDate, other.deadlineDate)
+				&& Objects.equals(dealDate, other.dealDate) && Arrays.equals(products, other.products)
+				&& Objects.equals(seller, other.seller);
 	}
 
 	@Override
@@ -125,8 +130,9 @@ public class Deal {
 		builder.append(bayer);
 		builder.append(", dealDate=");
 		builder.append(dealDate);
+		builder.append(", deadlineDate=");
+		builder.append(deadlineDate);
 		builder.append("]");
 		return builder.toString();
 	}
-
 }

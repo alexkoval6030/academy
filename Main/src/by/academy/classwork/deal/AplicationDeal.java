@@ -1,5 +1,7 @@
 package by.academy.classwork.deal;
 
+import java.time.LocalDate;
+
 public class AplicationDeal {
 
 	public static void main(String[] args) {
@@ -10,14 +12,18 @@ public class AplicationDeal {
 		products[1] = new Motorcycle("Harley-Davidson", 10000.0, 1, "Black", 1.8);
 		products[2] = new Car("Audi", 5000.0, 1, "100", 5);
 		
-		Deal deal = new Deal(products, seller, bayer, "25.07.21");
+		
+		Deal deal = new Deal(products, seller, bayer, LocalDate.now());
 				
 		System.out.println(deal);
 		System.out.println(deal.calcFullPrice());
-		deal.deleteProduct("Aud");
+		deal.deleteProduct("Audi");
 		System.out.println(deal);
 		System.out.println(deal.calcFullPrice());
-		deal.addProduct("Subaru", 10000.0, 1);
+		deal.addProduct(new Car("BMW", 20000.0, 1, "X5", 5));
+		System.out.println(deal);
+		System.out.println(deal.calcFullPrice());
+		
 	}
 
 }
