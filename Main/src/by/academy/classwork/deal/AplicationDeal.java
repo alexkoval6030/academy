@@ -14,7 +14,10 @@ public class AplicationDeal {
 				
 		System.out.println(deal);
 		System.out.println(deal.calcFullPrice());
-		
+		deal.deleteProduct("Aud");
+		System.out.println(deal);
+		System.out.println(deal.calcFullPrice());
+		deal.addProduct("Subaru", 10000.0, 1);
 	}
 
 }

@@ -26,24 +26,42 @@ public class Deal {
 	}
 
 	public void deleteProduct(String name) {
-		Product[] deleteProduct = new Product[products.length - 1];
-		int k = 0;
-
+		int newArraySize = 0;
 		for (int i = 0; i < products.length; i++) {
-			if (products[i].getName() != name) {
-				deleteProduct[k] = products[i];
+			if (products[i].getName() == name) {
+				newArraySize++;
+				products[i] = null;
 			}
 		}
+		if (newArraySize != 0) {
+			Product[] deleteProduct = new Product[products.length - newArraySize];
+			int k = 0;
 
-		products = deleteProduct;
+			for (int i = 0; i < products.length; i++) {
+				if (products[i] != null) {
+					deleteProduct[k] = products[i];
+					k++;
+				}
+			}
+
+			products = deleteProduct;
+		}
 	}
 
-	public void addProduct(Product product) {
-		Product[] addProduct = new Product[products.length + 1];
+	public void addProduct(String name, double price, int quantity) {
 		for (int i = 0; i < products.length; i++) {
-			addProduct[i] = products[i];
+			if (products[i].getName() == name) {
+				products[i].setQuantity(products[i].getQuantity() + quantity);
+				break;
+			}
 		}
-		addProduct[products.length - 1] = product;
+		
+		Product[] addProduct = Arrays.copyOf(products, products.length + 1);
+		addProduct[addProduct.length - 1] = addProduct[0];
+		addProduct[addProduct.length - 1].setName(name);
+		addProduct[addProduct.length - 1].setPrice(price);
+		addProduct[addProduct.length - 1].setQuantity(quantity);		
+		products = addProduct;
 	}
 
 	public void setProducts(Product[] products) {
