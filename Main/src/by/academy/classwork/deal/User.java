@@ -5,7 +5,6 @@ import java.util.Objects;
 public class User {
 	String nameUser;
 	double moneyUser;
-
 	
 	public User(String nameUser, double moneyUser) {
 		this.nameUser = nameUser;
@@ -56,5 +55,4 @@ public class User {
 		builder.append("]");
 		return builder.toString();
 	}
-
 }

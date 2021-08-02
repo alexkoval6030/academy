@@ -13,5 +13,4 @@ public class BelarusPhoneValidator implements Validator{
 		}
 		return false;
 	}
-
 }

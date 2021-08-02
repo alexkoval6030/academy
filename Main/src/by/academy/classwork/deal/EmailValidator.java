@@ -12,5 +12,4 @@ public class EmailValidator implements Validator {
 		}
 		return false;
 	}
-
 }

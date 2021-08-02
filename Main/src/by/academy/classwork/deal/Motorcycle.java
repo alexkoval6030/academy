@@ -5,8 +5,7 @@ import java.util.Objects;
 public class Motorcycle extends Product {
 	protected String color;
 	protected double engineDisplacement;
-	
-		
+			
 	public Motorcycle(String name, double price, int quantity, String color, double engineDisplacement) {
 		super(name, price, quantity);
 		this.color = color;
@@ -62,7 +61,4 @@ public class Motorcycle extends Product {
 	public String toString() {
 		return "Motorcycle [color=" + color + ", engineDisplacement=" + engineDisplacement + "]";
 	}
-
-	
-
 }

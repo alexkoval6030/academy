@@ -59,7 +59,7 @@ public abstract class Product {
 			return false;
 		Product other = (Product) obj;
 		return Objects.equals(name, other.name)
-				&& Double.doubleToLongBits(price) == Double.doubleToLongBits(other.price) && quantity == other.quantity;
+				&& Double.doubleToLongBits(price) == Double.doubleToLongBits(other.price);
 	}
 
 	@Override
@@ -74,5 +74,4 @@ public abstract class Product {
 		builder.append("]");
 		return builder.toString();
 	}
-
 }

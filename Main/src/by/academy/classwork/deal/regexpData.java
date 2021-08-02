@@ -10,6 +10,7 @@ public class regexpData {
 	
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
+		
 		System.out.println("Enter date in dd/MM/yyyy");
 		String scanData1 = scan.nextLine();
 		Matcher matcherData1 = patternData1.matcher(scanData1);

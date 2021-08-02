@@ -4,7 +4,6 @@ import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.Objects;
 
-
 public class Deal {
 	protected Product[] products;
 	protected User seller;
@@ -24,7 +23,6 @@ public class Deal {
 		double calcFullPrice = 0;
 		for (int i = 0; i < products.length; i++) {
 			calcFullPrice += products[i].calcPrice();
-
 		}
 		return calcFullPrice;
 	}
@@ -59,10 +57,10 @@ public class Deal {
 				return;
 			}
 		}
-		
+
 		Product[] addProduct = Arrays.copyOf(products, products.length + 1);
 		addProduct[addProduct.length - 1] = product;
-				
+
 		products = addProduct;
 	}
 
@@ -85,8 +83,6 @@ public class Deal {
 	public void setBayer(User bayer) {
 		this.bayer = bayer;
 	}
-
-	
 
 	public LocalDate getDealDate() {
 		return dealDate;
