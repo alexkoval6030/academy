@@ -6,7 +6,7 @@ public class ArrayListCustomDemo {
 	
 	public static void main(String[] args) {
 		Integer [] arrInt = {1,2,3};
-		ArrayListCustom<Integer> = new ArrayListCustom<>(arrInt);
+		ArrayListCustom<Integer> obj = new ArrayListCustom<>(arrInt);
 		System.out.println(Arrays.toString(obj.getItems()));
 	}
 
