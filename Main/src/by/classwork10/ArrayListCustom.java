@@ -30,29 +30,27 @@ public class ArrayListCustom<T> {
 	}
 
 	public void add(T item) {
-		if (size > items.length) {
+		if (size >= items.length) {
 			growth();
-		} else {
-			items[size++] = item;
 		}
+		items[size++] = item;
 	}
 
 	public void remove(int index) {
 		if (index >= size || index < 0) {
-			System.out.println("Выход за пределы массива");
+			System.out.println("Попытка удаления пустого элемента");
 			return;
 		}
 
 		if (index < size) {
 			System.arraycopy(items, index + 1, items, index, size - index - 1);
-		} else {
-			items[--size] = null;
 		}
+		items[--size] = null;
 	}
 
 	public void set(int index, T item) {
 		if (index >= items.length || index < 0) {
-			System.out.println("Выход за пределы массива");
+			System.out.println(index + " indexOutBoundOfArray");
 			return;
 		}
 		if (index >= size) {
@@ -60,18 +58,16 @@ public class ArrayListCustom<T> {
 		} else {
 			items[index] = item;
 		}
-
 	}
 
 	public T get(int index) {
 		if (index >= size || index < 0) {
-			System.out.println("Выход за пределы массива");
+			System.out.println("Выход за предел массива");
 			return null;
 		} else {
 			return items[index];
 		}
 	}
-
 	public T[] getItems() {
 		return items;
 	}

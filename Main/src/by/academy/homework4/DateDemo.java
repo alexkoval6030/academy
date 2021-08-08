@@ -1,18 +1,14 @@
 package by.academy.homework4;
 
-import by.academy.homework4.Date.Day;
-import by.academy.homework4.Date.Month;
-import by.academy.homework4.Date.Year;
-
 public class DateDemo {
 
 	public static void main(String[] args) {
 		
-
-
-		Date date = new Date();
-		
+		Date date = new Date("23-11-1988");
+		System.out.println(date);
 		date.getTheDayOfTheWeekByDate();
+		date.numberOfDaysFromTheGivenDateToTheCurrentDate();
+		date.leapYear();
 
 	}
 
