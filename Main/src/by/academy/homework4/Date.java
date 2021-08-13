@@ -1,7 +1,9 @@
 package by.academy.homework4;
 
+import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.Period;
+import java.time.chrono.IsoChronology;
 import java.time.temporal.ChronoUnit;
 import java.util.Objects;
 import java.util.regex.Matcher;
@@ -9,18 +11,19 @@ import java.util.regex.Pattern;
 
 public class Date {
 
-	Day day;
-	Month month;
-	Year year;
+	private Day day;
+	private Month month;
+	private Year year;
 
 	public Date(Year year, Month month, Day day) {
+
 		this.day = day;
 		this.month = month;
 		this.year = year;
 	}
 
 	public Date(String date) {
-		if (validator(date) == true) {
+		if (validator(date)) {
 			String[] arrayData = date.split("-");
 			day = new Day(Integer.parseInt(arrayData[0]));
 			month = new Month(Integer.parseInt(arrayData[1]));
@@ -30,25 +33,26 @@ public class Date {
 		}
 	}
 
-	public boolean validator(String date) {
+	private boolean validator(String date) {
 		Pattern datePattern = Pattern.compile("(0?[1-9]|[12][0-9]|3[01])-(0?[13578]|1[02])-(\\d{4})");
 		Pattern datePattern1 = Pattern.compile("(0?[1-9]|[12][0-9]|3[0])-(0?[469]|1{2})-(\\d{4})");
 		Pattern datePattern2 = Pattern.compile("(0?[1-9]|1[0-9]|2[0-9])-(0?2)-(\\d{4})");
 		Matcher matcher = datePattern.matcher(date);
 		Matcher matcher1 = datePattern1.matcher(date);
 		Matcher matcher2 = datePattern2.matcher(date);
-		if (matcher.matches() || matcher1.matches() || matcher2.matches()) {
+		if(matcher2.matches()) {
+			boolean isLeap = IsoChronology.INSTANCE.isLeapYear(Long.parseLong(date.split("-")[2]));
+			if(!isLeap) {
+				return Long.parseLong(date.split("-")[0]) < 29L;
+			}
 			return true;
-		} else {
-			return false;
 		}
+		
+		return matcher.matches() || matcher1.matches();
 	}
+	
 
-	public Date() {
-		super();
-	}
-
-	class Day {
+	public class Day {
 
 		private int day;
 
@@ -101,7 +105,7 @@ public class Date {
 		}
 	}
 
-	class Month {
+	public class Month {
 
 		private int month;
 
@@ -154,7 +158,7 @@ public class Date {
 		}
 	}
 
-	class Year {
+	public class Year {
 
 		private int year;
 
@@ -207,29 +211,32 @@ public class Date {
 		}
 	}
 
-	public void getTheDayOfTheWeekByDate() {
-		if (validator(day.getDay() + "-" + month.getMonth() + "-" + year.getYear()) == true) {
+	public DayOfWeek getTheDayOfTheWeekByDate() {
+		if (validator(day.getDay() + "-" + month.getMonth() + "-" + year.getYear())) {
 			LocalDate dayOfWeekByDate = LocalDate.of(year.getYear(), month.getMonth(), day.getDay());
 			System.out.println(dayOfWeekByDate.getDayOfWeek());
+			return dayOfWeekByDate.getDayOfWeek();
 		} else {
 			System.out.println("Date entered incorrectly");
+			return null;
 		}
 	}
 
-	public void numberOfDaysFromTheGivenDateToTheCurrentDate() {
-		if (validator(day.getDay() + "-" + month.getMonth() + "-" + year.getYear()) == true) {
+	public long getNumbersOfDaysFromTheGivenDateToTheCurrentDate() {
+		if (validator(day.getDay() + "-" + month.getMonth() + "-" + year.getYear())) {
 			LocalDate givenDate = LocalDate.of(year.getYear(), month.getMonth(), day.getDay());
 			LocalDate currentDate = LocalDate.now();
 			Period dif = Period.between(givenDate, currentDate);
 			long difference = ChronoUnit.DAYS.between(givenDate, currentDate);
 			System.out.println("difference of " + dif.getYears() + "year/years " + dif.getMonths() + "month/months "
 					+ dif.getDays() + "day/days or " + difference + "days total");
+			return difference;
 		}
+		return 0;
 	}
 	
 	public void leapYear() {
 		LocalDate leapYear = LocalDate.of(year.getYear(), month.getMonth(), day.getDay());
-		leapYear.isLeapYear();
 		if(leapYear.isLeapYear() == true) {
 			System.out.println(year.getYear() + " is a leap year");
 		}else {

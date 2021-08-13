@@ -1,5 +1,7 @@
 package by.academy.homework4;
 
+import java.util.Iterator;
+
 public class ArrayListHomework<T> {
 	private T[] items;
 	private int size;
@@ -106,5 +108,9 @@ public class ArrayListHomework<T> {
 
 	public T[] getItems() {
 		return items;
+	}
+	
+	public Iterator<T> getIterator(){
+		return new ArrayIterator<T>(items);
 	}
 }

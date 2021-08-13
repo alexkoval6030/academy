@@ -27,6 +27,7 @@ public class ArrayListHomeworkDemo {
 		System.out.println(obj.getFirst());
 		System.out.println(obj.arraySize());
 		System.out.println(obj.indexOfTheLastFilledArrayElement());
+	
 	}
 
 }
