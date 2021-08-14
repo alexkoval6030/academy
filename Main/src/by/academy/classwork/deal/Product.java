@@ -43,6 +43,10 @@ public abstract class Product {
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
 	}
+	
+	public static final Comporator<Product> PRODUCT_COMPORATOR = new Comporator<Product>() {
+		
+	}
 
 	@Override
 	public int hashCode() {
