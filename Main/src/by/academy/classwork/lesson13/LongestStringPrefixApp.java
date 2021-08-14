@@ -6,6 +6,7 @@ import java.util.Map;
 public class LongestStringPrefixApp {
 
 	public static void main(String[] args) {
+		
 		String[] array = { "test", "test", "tes", "abc", "cba", "abcde", "abcdef" };
 
 		System.out.println(getLongestPrefix(array));
