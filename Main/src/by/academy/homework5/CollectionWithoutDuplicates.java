@@ -20,5 +20,4 @@ public class CollectionWithoutDuplicates {
 		collectionDemo = collectionWithDublicates(collectionDemo);
 		System.out.println(collectionDemo);
 	}
-
 }

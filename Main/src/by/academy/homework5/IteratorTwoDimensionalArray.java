@@ -4,7 +4,6 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 public class IteratorTwoDimensionalArray<E> implements Iterator<E> {
-	
 	private E[][] elements;
 	private int stringIndex = 0;
 	private int columnIndex = 0;

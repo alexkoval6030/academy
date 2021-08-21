@@ -33,5 +33,4 @@ public class TimeComparison {
 		addElementsToList(linked);
 		selectRandomItemsFromList(linked);
 	}
-
 }
