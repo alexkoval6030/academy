@@ -8,7 +8,7 @@ public class TimeComparison {
 	
 	public static <T> void addElementsToList(List<Integer> list) {
 		long start = System.currentTimeMillis();
-		for (int i = 0; i < 1_000_000; i++) {
+		for (int i = 0; i < 50_000_000; i++) {
 			list.add((int)(1 + Math.random() * 100));
 		}
 		long end = System.currentTimeMillis();
@@ -27,10 +27,10 @@ public class TimeComparison {
 	public static void main(String[] args) {
 		ArrayList<Integer> array = new ArrayList<>();
 		addElementsToList(array);
-		selectRandomItemsFromList(array);
+//		selectRandomItemsFromList(array);
 		
 		LinkedList<Integer> linked = new LinkedList<>();
-		addElementsToList(linked);
-		selectRandomItemsFromList(linked);
+//		addElementsToList(linked);
+//		selectRandomItemsFromList(linked);
 	}
 }

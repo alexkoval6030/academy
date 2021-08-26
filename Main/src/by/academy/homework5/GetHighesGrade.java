@@ -2,11 +2,12 @@ package by.academy.homework5;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 public class GetHighesGrade {
 
 	public static void main(String[] args) {
-		ArrayList<Integer> grades = new ArrayList<>(20);
+		List<Integer> grades = new ArrayList<>(20);
 		
 		for (int i = 0; i < 20; i++) {
 			int j = (int)(1 + Math.random() * 10);
@@ -17,9 +18,9 @@ public class GetHighesGrade {
 		Iterator<Integer> iterator = grades.iterator();
 		int highesGrade = iterator.next();
 		while (iterator.hasNext()) {
-			int i = iterator.next();
-			if(i > highesGrade) {
-				highesGrade = i;
+			int currentGrade = iterator.next();
+			if(currentGrade > highesGrade) {
+				highesGrade = currentGrade;
 			}
 		}
 		System.out.print("Highes Grade: " + highesGrade);

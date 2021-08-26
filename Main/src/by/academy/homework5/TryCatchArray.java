@@ -1,6 +1,6 @@
 package by.academy.homework5;
 
-public class tryCatchArray {
+public class TryCatchArray {
 
 	public static void main(String[] args) {
 		try {
