@@ -18,6 +18,7 @@ public class ThreadDemo1 implements Runnable {
 				}
 			}
 		}
+		
 	}
 
 	public static void main(String[] args) {
