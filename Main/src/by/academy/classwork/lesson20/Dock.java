@@ -1,39 +1,39 @@
 package by.academy.classwork.lesson20;
 
-import java.util.List;
-
 public class Dock {
-	
-	List<Dock> docs = ArrayList<Dock>();
-	
-	private int dockCapacity = 20;
-	
-	public synchronized void get() {
-		while (dockCapacity < 1) {
-			try {
-				wait();
-				System.out.println("Wait container");
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-		}
-		dockCapacity--;
-		System.out.println(Thread.currentThread().getName() + "Ship got 1 container. Number of containers: " + dockCapacity);
-		notify();
-	}
-	
-	public synchronized void put() {
-		while (dockCapacity >= 9) {
-			try {
-				wait();
-				System.out.println("Wait dock");
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-		}
-		dockCapacity++;
-		System.out.println(Thread.currentThread().getName() + "Ship added 1 container. Number of containers: " + dockCapacity);
-		notify();
+	private static final int FULL_CAPACITY = 10;
+	private int capacity;
+	private String name;
+
+	public Dock(int numberContainers, String name) {
+		super();
+		this.capacity = FULL_CAPACITY - numberContainers;
+		this.name = name;
 	}
 
+	// load by one, return true if success
+	public boolean load() {
+		if (capacity == 0) {
+			System.out.println("Невозможно загрузить на товар на склад. Склад " + name
+					+ " полный. Текущая загруженость: " + capacity);
+			return false;
+		} else {
+			System.out.println("Товар успешно загружен на склад " + name + ". Текущая загруженость: " + capacity);
+			capacity--;
+			return true;
+		}
+	}
+
+	// unload by one, return true if success
+	public boolean unload() {
+		if (capacity == FULL_CAPACITY) {
+			System.out.println("Невозможно загрузить на товар на склад. Склад " + name
+					+ " пустой. Текущая загруженость: " + capacity);
+			return false;
+		} else {
+			System.out.println("Товар успешно взят со склада " + name + ". Текущая загруженость: " + capacity);
+			capacity++;
+			return true;
+		}
+	}
 }
