@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9c7c9187-2b72-44b4-b461-38e2ebc44697" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson11_07_21/Bit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson11_07_21/BitOr.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson11_07_21/BitXor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson11_07_21/Task1_0.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson11_07_21/Task1_1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson11_07_21/Task1_2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson11_07_21/Task1_3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson11_07_21/Task1_4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson11_07_21/Task1_5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by.academy.homework6/io1/hello.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/deal/AmericanPhoneValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/deal/AplicationDeal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/deal/BelarusPhoneValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/deal/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/deal/Comporator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/deal/Deal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/deal/EmailValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/deal/Motorcycle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/deal/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/deal/ProductProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/deal/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/deal/Validator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/deal/regexpData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson1/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson1/Cat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson13/LongestStringPrefixApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson13/ValidationDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson13/WrongLoginException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson13/WrongPasswordException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson14/AutoclosableTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson14/FileCopy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson14/FileDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson14/FinallyUse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson14/SerializableDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson15/LambdaPrintable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson15/Printable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson15/StreamDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson15/Task2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson15/Task3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson15/Task4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson15/Task5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson15/Task7.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson18/AnimalDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson18/Cat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson18/Tiger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson19/ThreadDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson19/ThreadDemo1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson20/Dock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson20/Port.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson20/PortDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson20/Ship.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson20/ShipGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson21/DiningRoom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson21/ExpandedThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson21/Philosopher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson21/StringBuilderObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson4/Cat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson4/Task1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson4/Task2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson4/Task3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson8/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson8/LocalDate1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson8/Magazine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson8/Printable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson8/PrintableDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson8/Seasons.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/classwork/lesson8/SeasonsDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/homework1/Task1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/homework1/Task2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/homework1/Task3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/homework1/Task4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/homework2/Deal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/homework2/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/homework2/Task1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/homework2/Task2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/homework2/Task3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/homework4/ArrayIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/homework4/ArrayListHomework.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/homework4/ArrayListHomeworkDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/homework4/Date.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/homework4/DateDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/homework5/CharacterFrequentist.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/homework5/CollectionWithoutDuplicates.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/homework5/GetHighesGrade.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/homework5/IteratorTwoDimensionalArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/homework5/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/homework5/TimeComparison.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/homework5/TryCatchArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/homework5/TwoDimensionalArrayDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/homework6/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/homework6/FileAssistant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/homework6/OverwriteFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/homework6/StopFileWriter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/homework6/Task4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/homework6/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/homework6/UserSerializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/homework7/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/homework7/ReflectoinDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/homework7/StreamLambda.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/academy/homework7/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/classwork/lesson9/Average.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/classwork/lesson9/ClassworkDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/classwork/lesson9/MinMax.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/classwork10/ArrayListCustom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/classwork10/ArrayListCustomDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/classwork10/Box.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/by/classwork10/CustomLinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io1/hello.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io2/result.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io2/text.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io3/firstName0_lastName0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io3/firstName1_lastName1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io3/firstName2_lastName2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io3/firstName3_lastName3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io3/firstName4_lastName4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io3/firstName5_lastName5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io3/firstName6_lastName6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io3/firstName7_lastName7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io3/firstName8_lastName8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io3/firstName9_lastName9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/12.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/13.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/14.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/15.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/16.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/17.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/18.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/19.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/20.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/21.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/22.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/23.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/24.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/25.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/26.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/27.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/28.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/29.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/30.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/31.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/32.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/33.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/34.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/35.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/36.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/37.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/38.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/39.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/40.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/41.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/42.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/43.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/44.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/45.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/46.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/47.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/48.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/49.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/50.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/51.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/52.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/53.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/54.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/55.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/56.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/57.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/58.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/59.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/60.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/61.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/62.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/63.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/64.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/65.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/66.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/67.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/68.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/69.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/70.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/71.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/72.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/73.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/74.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/75.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/76.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/77.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/78.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/79.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/80.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/81.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/82.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/83.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/84.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/85.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/86.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/87.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/88.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/89.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/90.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/91.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/92.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/93.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/94.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/95.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/96.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/97.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/98.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/99.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/by.academy.homework6/io4/result.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../.." value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1yPtRohoT8s4eoWA3hnt3NlGPzN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../src" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Task1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.academy.homework1.Task1" />
+      <module name="main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.academy.homework1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="main" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Task1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9c7c9187-2b72-44b4-b461-38e2ebc44697" name="Changes" comment="" />
+      <created>1632165047495</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1632165047495</updated>
+      <workItem from="1632165048830" duration="369000" />
+      <workItem from="1632170812381" duration="2663000" />
+      <workItem from="1632247729547" duration="1179000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
