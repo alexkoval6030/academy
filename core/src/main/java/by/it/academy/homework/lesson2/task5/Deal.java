@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Deal {
 
     public static void main(String[] args) {
+
         String[] cards = new String[]{"2", "3", "4", "5", "6", "7", "8", "9", "T", "J", "Q", "K", "A"};
         String[] suits = new String[]{"spades ", "hearts ", "diamond", "clubs  "};
 

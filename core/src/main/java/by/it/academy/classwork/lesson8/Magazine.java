@@ -1,19 +1,19 @@
-package java.by.it.academy.classwork.lesson8;
+package by.it.academy.classwork.lesson8;
 
-public class Magazine implements Printable{
+public class Magazine implements Printable {
 
-	@Override
-	public void print() {
-		System.out.println("Magazine");
-		
-	}
+    @Override
+    public void print() {
+        System.out.println("Magazine");
 
-	public static void printMagazine(Printable[] arr) {
-		for(Printable p : arr) {
-			if(p instanceof Magazine) {
-				p.print();
-			}
-		}
-		
-	}
+    }
+
+    public static void printMagazine(Printable[] arr) {
+        for (Printable p : arr) {
+            if (p instanceof Magazine) {
+                p.print();
+            }
+        }
+
+    }
 }

@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class StopFileWriter {
 
 	private final String stopWord = "stop";
-	private final String filePath = "src/by.academy.homework6/io1/";
+	private final String filePath = "java/by/it/academy/homework/lesson6/io1/";
 	private final String fileName = "hello.txt";
 
 	public static void main(String[] args) {
@@ -41,7 +41,6 @@ public class StopFileWriter {
 			System.out.println("IO exception occurred while processing file");
 			e.printStackTrace();
 		}
-
 		scan.close();
 	}
 }

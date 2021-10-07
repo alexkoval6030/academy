@@ -9,16 +9,14 @@ Reflection API.
     age
     dateOfBirth
 
-Добавить класс User, который наследуется от 
-Person, с полями:
+Добавить класс User, который наследуется от Person, с полями:
 
     login
     password
     email
 
-Добавить гетеры, сетеры. Добавить метод
-printUserInfo в User. Вывести с помощью рефлексии
-все поля и методы, сначала через:
+Добавить гетеры, сетеры. Добавить метод printUserInfo в User. Вывести с помощью рефлексии все поля и методы,
+сначала через:
 
     getMethod("name")
     getMethods()
@@ -32,7 +30,5 @@ printUserInfo в User. Вывести с помощью рефлексии
     getDeclaredField("name")
     getDeclaredFields()
 
-Посмотреть разницу. Просетать все значения через
-Reflection (set метод класса Field). Вывести значения
-полей через Reflection (get метод класса Field). Вызвать
-toString через invoke.
+Посмотреть разницу. Просетать все значения через Reflection (set метод класса Field). Вывести значения полей
+через Reflection (get метод класса Field). Вызвать toString через invoke.

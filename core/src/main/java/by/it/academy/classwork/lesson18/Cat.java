@@ -1,26 +1,25 @@
-package java.by.it.academy.classwork.lesson18;
+package by.it.academy.classwork.lesson18;
 
 public class Cat {
-	
-	public String name;
-	protected int age;
-	private String colorEye;
-	
-	
-	public Cat() {
-		
-	}
 
-	public void run() {
-		System.out.println("Run");
-	}
-	
-	protected void eat() {
-		System.out.println("Eat");
-	}
-	
-	private void sleep() {
-		System.out.println("Sleep");
-	}
+    public String name;
+    protected int age;
+    private String colorEye;
+
+    public Cat() {
+
+    }
+
+    public void run() {
+        System.out.println("Run");
+    }
+
+    protected void eat() {
+        System.out.println("Eat");
+    }
+
+    private void sleep() {
+        System.out.println("Sleep");
+    }
 
 }

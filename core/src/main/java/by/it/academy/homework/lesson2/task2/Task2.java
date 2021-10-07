@@ -6,12 +6,11 @@ public class Task2 {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Введите первое слово: ");
+        System.out.println("Enter first word: ");
         String firstWord = scan.nextLine();
-        System.out.println("Введите второе слово: ");
+        System.out.println("Enter second word: ");
         String secondWord = scan.nextLine();
         char[] firstWordArray = firstWord.toCharArray();
-        //char[] secondWordArray = secondWord.toCharArray();
 
         if ((firstWord.length() != secondWord.length())) {
             System.out.println("False");

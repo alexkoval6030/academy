@@ -5,13 +5,14 @@ import java.util.Scanner;
 public class Task3 {
 
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
-        System.out.println("Введите число сравниваемых слов");
+        System.out.println("Enter the number of words to compare");
         int numberOfWordsToCompare = scan.nextInt();
         String[] wordArray = new String[numberOfWordsToCompare];
 
         for (int i = 0; i < wordArray.length; i++) {
-            System.out.println("Введите слово");
+            System.out.println("Enter the word");
             wordArray[i] = scan.next();
         }
 

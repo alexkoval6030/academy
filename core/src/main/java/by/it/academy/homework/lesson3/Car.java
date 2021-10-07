@@ -4,62 +4,62 @@ import java.util.Objects;
 
 
 public class Car extends Product {
-	String modelOfCar;
-	int numberOfPassenger;
+    String modelOfCar;
+    int numberOfPassenger;
 
-	
-	public Car(String name, double price, int quantity, String modelOfCar, int numberOfPassenger) {
-		super(name, price, quantity);
-		this.modelOfCar = modelOfCar;
-		this.numberOfPassenger = numberOfPassenger;
-	}
 
-	@Override
-	public double discount() {
-		if (numberOfPassenger > 2) {
-			return 0.2;
-		}
-		return 0;
-	}
+    public Car(String name, double price, int quantity, String modelOfCar, int numberOfPassenger) {
+        super(name, price, quantity);
+        this.modelOfCar = modelOfCar;
+        this.numberOfPassenger = numberOfPassenger;
+    }
 
-	public String getModelOfCar() {
-		return modelOfCar;
-	}
+    @Override
+    public double discount() {
+        if (numberOfPassenger > 2) {
+            return 0.2;
+        }
+        return 0;
+    }
 
-	public void setModelOfCar(String modelOfCar) {
-		this.modelOfCar = modelOfCar;
-	}
+    public String getModelOfCar() {
+        return modelOfCar;
+    }
 
-	public int getNumberOfPassenger() {
-		return numberOfPassenger;
-	}
+    public void setModelOfCar(String modelOfCar) {
+        this.modelOfCar = modelOfCar;
+    }
 
-	public void setNumberOfPassenger(int numberOfPassenger) {
-		this.numberOfPassenger = numberOfPassenger;
-	}
+    public int getNumberOfPassenger() {
+        return numberOfPassenger;
+    }
 
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = super.hashCode();
-		result = prime * result + Objects.hash(modelOfCar, numberOfPassenger);
-		return result;
-	}
+    public void setNumberOfPassenger(int numberOfPassenger) {
+        this.numberOfPassenger = numberOfPassenger;
+    }
 
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (!super.equals(obj))
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Car other = (Car) obj;
-		return Objects.equals(modelOfCar, other.modelOfCar) && numberOfPassenger == other.numberOfPassenger;
-	}
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = super.hashCode();
+        result = prime * result + Objects.hash(modelOfCar, numberOfPassenger);
+        return result;
+    }
 
-	@Override
-	public String toString() {
-		return "Car [modelOfCar=" + modelOfCar + ", numberOfPassenger=" + numberOfPassenger + "]";
-	}
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (!super.equals(obj))
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Car other = (Car) obj;
+        return Objects.equals(modelOfCar, other.modelOfCar) && numberOfPassenger == other.numberOfPassenger;
+    }
+
+    @Override
+    public String toString() {
+        return "Car [modelOfCar=" + modelOfCar + ", numberOfPassenger=" + numberOfPassenger + "]";
+    }
 }

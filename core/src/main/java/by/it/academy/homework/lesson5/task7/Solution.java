@@ -38,9 +38,9 @@ public class Solution {
 		}
 	}
 
-	public static void printDoublyLinkedList(DoublyLinkedListNode node, String sep) throws IOException {
+	public static void printDoublyLinkedList(DoublyLinkedListNode node, String sep) {
 		while (node != null) {
-			System.out.print(String.valueOf(node.data));
+			System.out.print(node.data);
 			node = node.next;
 			if (node != null) {
 				System.out.print(sep);
@@ -68,20 +68,22 @@ public class Solution {
 
 	public static void main(String[] args) throws IOException {
 
-		DoublyLinkedList llist = new DoublyLinkedList();
+		DoublyLinkedList list = new DoublyLinkedList();
 
-		int llistCount = scanner.nextInt();
+		System.out.println("введите число");
+		int listCount = scanner.nextInt();
 		scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
-		for (int i = 0; i < llistCount; i++) {
-			int llistItem = scanner.nextInt();
+		for (int i = 0; i < listCount; i++) {
+			System.out.println("введите цифру");
+			int listItem = scanner.nextInt();
 			scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
-			llist.insertNode(llistItem);
+			list.insertNode(listItem);
 		}
-		DoublyLinkedListNode llist1 = reverse(llist);
+		DoublyLinkedListNode list1 = reverse(list);
 
-		printDoublyLinkedList(llist1, " ");
+		printDoublyLinkedList(list1, " ");
 		scanner.close();
 	}
 }
