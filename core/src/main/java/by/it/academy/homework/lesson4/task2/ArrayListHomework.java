@@ -39,7 +39,7 @@ public class ArrayListHomework<T> {
 
 	public T get(int index) {
 		if (index >= size || index < 0) {
-			System.out.println("Выход за пределы массива");
+			System.out.println("Array index out of bounds");
 			return null;
 		} else {
 			return items[index];
@@ -48,7 +48,7 @@ public class ArrayListHomework<T> {
 
 	public T getLast() {
 		if (items[size - 1].equals(null)) {
-			System.out.println("Массив пустой");
+			System.out.println("Empty array");
 			return null;
 		} else {
 			return items[size - 1];
@@ -57,7 +57,7 @@ public class ArrayListHomework<T> {
 
 	public T getFirst() {
 		if (items[0].equals(null)) {
-			System.out.println("Массив пустой");
+			System.out.println("Empty array");
 			return null;
 		} else {
 			return items[0];
@@ -74,10 +74,9 @@ public class ArrayListHomework<T> {
 
 	public void remove(int index) {
 		if (index >= size || index < 0) {
-			System.out.println("Выход за пределы массива");
+			System.out.println("Array index out of bounds");
 			return;
 		}
-
 		if (index < size) {
 			System.arraycopy(items, index + 1, items, index, size - index - 1);
 		}
@@ -98,7 +97,7 @@ public class ArrayListHomework<T> {
 
 	public void set(int index, T item) {
 		if (index >= items.length || index < 0) {
-			System.out.println("Выход за пределы массива");
+			System.out.println("Array index out of bounds");
 			return;
 		}
 		if (index >= size) {

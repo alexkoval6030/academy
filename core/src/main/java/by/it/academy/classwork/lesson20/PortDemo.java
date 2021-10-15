@@ -1,17 +1,17 @@
-package java.by.it.academy.classwork.lesson20;
+package by.it.academy.classwork.lesson20;
 
 import java.util.LinkedList;
 
 public class PortDemo {
 
-	public static void main(String... args) {
-		LinkedList<Dock> docks = new LinkedList<>();
+    public static void main(String... args) {
+        LinkedList<Dock> docks = new LinkedList<>();
 
-		docks.add(new Dock(0, "Alfa"));
-		docks.add(new Dock(0, "Beta"));
-		docks.add(new Dock(0, "Gamma"));
+        docks.add(new Dock(0, "Alfa"));
+        docks.add(new Dock(0, "Beta"));
+        docks.add(new Dock(0, "Gamma"));
 
-		Port port = new Port(docks);
-		new ShipGenerator(port).start();
-	}
+        Port port = new Port(docks);
+        new ShipGenerator(port).start();
+    }
 }
