@@ -3,7 +3,6 @@ package by.it.academy.homework.lesson7.task2;
 import java.time.LocalDate;
 
 public class Person {
-
     public String firstName;
     public String lastName;
     private LocalDate dateOfBirth;

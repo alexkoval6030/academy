@@ -3,12 +3,11 @@ package by.it.academy.homework.lesson4.task2;
 import java.util.Arrays;
 
 public class ArrayListHomeworkDemo {
-
     public static void main(String[] args) {
         Integer[] arrInt = {1, 2, 3};
         ArrayListHomework<Integer> obj = new ArrayListHomework<>(arrInt);
-        System.out.println(Arrays.toString(obj.getItems()));
 
+        System.out.println(Arrays.toString(obj.getItems()));
         obj.add(4);
         obj.add(32);
         obj.add(6);

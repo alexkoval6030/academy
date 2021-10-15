@@ -1,9 +1,8 @@
-package by.it.academy.homework.lesson3;
+package by.it.academy.homework.lesson3.dataValidation;
 
 import java.util.regex.Pattern;
 
 public class AmericanPhoneValidator implements Validator {
-
     private static Pattern americanNumber = Pattern.compile("\\+1\\\\d{10}");
 
     @Override

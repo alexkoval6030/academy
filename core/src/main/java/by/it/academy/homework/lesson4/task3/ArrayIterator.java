@@ -4,7 +4,6 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 public class ArrayIterator<E> implements Iterator<E> {
-
     private E[] elements;
     private int index = 0;
 

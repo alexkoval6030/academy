@@ -3,14 +3,10 @@ package by.it.academy.homework.lesson2.task5;
 import java.util.Scanner;
 
 public class Deal {
-
     public static void main(String[] args) {
-
         String[] cards = new String[]{"2", "3", "4", "5", "6", "7", "8", "9", "T", "J", "Q", "K", "A"};
         String[] suits = new String[]{"spades ", "hearts ", "diamond", "clubs  "};
-
         String[][] deckOfCards = new String[13][4];
-
         for (int i = 0; i < deckOfCards.length; i++) {
             for (int j = 0; j < deckOfCards[i].length; j++) {
                 String card = cards[i] + " " + suits[j];

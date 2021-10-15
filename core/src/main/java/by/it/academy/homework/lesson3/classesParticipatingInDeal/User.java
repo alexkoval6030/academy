@@ -1,4 +1,4 @@
-package by.it.academy.homework.lesson3;
+package by.it.academy.homework.lesson3.classesParticipatingInDeal;
 
 import java.util.Objects;
 

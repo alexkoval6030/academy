@@ -1,8 +1,8 @@
-package by.it.academy.homework.lesson3;
+package by.it.academy.homework.lesson3.classesParticipatingInDeal;
 
 import java.util.Objects;
 
-public class Motorcycle extends Product {
+public class Motorcycle extends AbstractProduct {
     protected String color;
     protected double engineDisplacement;
 

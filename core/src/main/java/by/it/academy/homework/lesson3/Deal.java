@@ -1,18 +1,21 @@
 package by.it.academy.homework.lesson3;
 
+import by.it.academy.homework.lesson3.classesParticipatingInDeal.AbstractProduct;
+import by.it.academy.homework.lesson3.classesParticipatingInDeal.User;
+
 import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.Objects;
 
 public class Deal {
-    protected Product[] products;
+    protected AbstractProduct[] abstractProducts;
     protected User seller;
     protected User bayer;
     protected LocalDate dealDate;
     protected LocalDate deadlineDate;
 
-    public Deal(Product[] products, User seller, User bayer, LocalDate dealDate) {
-        this.products = products;
+    public Deal(AbstractProduct[] abstractProducts, User seller, User bayer, LocalDate dealDate) {
+        this.abstractProducts = abstractProducts;
         this.seller = seller;
         this.bayer = bayer;
         this.dealDate = dealDate;
@@ -21,51 +24,47 @@ public class Deal {
 
     public double calcFullPrice() {
         double calcFullPrice = 0;
-        for (int i = 0; i < products.length; i++) {
-            calcFullPrice += products[i].calcPrice();
+        for (int i = 0; i < abstractProducts.length; i++) {
+            calcFullPrice += abstractProducts[i].calcPrice();
         }
         return calcFullPrice;
     }
 
     public void deleteProduct(String name) {
         int newArraySize = 0;
-        for (int i = 0; i < products.length; i++) {
-            if (products[i].getName() == name) {
+        for (int i = 0; i < abstractProducts.length; i++) {
+            if (abstractProducts[i].getName() == name) {
                 newArraySize++;
-                products[i] = null;
+                abstractProducts[i] = null;
             }
         }
         if (newArraySize != 0) {
-            Product[] deleteProduct = new Product[products.length - newArraySize];
+            AbstractProduct[] deleteAbstractProduct = new AbstractProduct[abstractProducts.length - newArraySize];
             int k = 0;
-
-            for (int i = 0; i < products.length; i++) {
-                if (products[i] != null) {
-                    deleteProduct[k] = products[i];
+            for (int i = 0; i < abstractProducts.length; i++) {
+                if (abstractProducts[i] != null) {
+                    deleteAbstractProduct[k] = abstractProducts[i];
                     k++;
                 }
             }
-
-            products = deleteProduct;
+            abstractProducts = deleteAbstractProduct;
         }
     }
 
-    public void addProduct(Product product) {
-        for (int i = 0; i < products.length; i++) {
-            if (products[i].equals(product)) {
-                products[i].setQuantity(products[i].getQuantity() + product.getQuantity());
+    public void addProduct(AbstractProduct abstractProduct) {
+        for (int i = 0; i < abstractProducts.length; i++) {
+            if (abstractProducts[i].equals(abstractProduct)) {
+                abstractProducts[i].setQuantity(abstractProducts[i].getQuantity() + abstractProduct.getQuantity());
                 return;
             }
         }
-
-        Product[] addProduct = Arrays.copyOf(products, products.length + 1);
-        addProduct[addProduct.length - 1] = product;
-
-        products = addProduct;
+        AbstractProduct[] addAbstractProduct = Arrays.copyOf(abstractProducts, abstractProducts.length + 1);
+        addAbstractProduct[addAbstractProduct.length - 1] = abstractProduct;
+        abstractProducts = addAbstractProduct;
     }
 
-    public void setProducts(Product[] products) {
-        this.products = products;
+    public void setProducts(AbstractProduct[] abstractProducts) {
+        this.abstractProducts = abstractProducts;
     }
 
     public User getSeller() {
@@ -96,7 +95,7 @@ public class Deal {
     public int hashCode() {
         final int prime = 31;
         int result = 1;
-        result = prime * result + Arrays.hashCode(products);
+        result = prime * result + Arrays.hashCode(abstractProducts);
         result = prime * result + Objects.hash(bayer, deadlineDate, dealDate, seller);
         return result;
     }
@@ -111,7 +110,7 @@ public class Deal {
             return false;
         Deal other = (Deal) obj;
         return Objects.equals(bayer, other.bayer) && Objects.equals(deadlineDate, other.deadlineDate)
-                && Objects.equals(dealDate, other.dealDate) && Arrays.equals(products, other.products)
+                && Objects.equals(dealDate, other.dealDate) && Arrays.equals(abstractProducts, other.abstractProducts)
                 && Objects.equals(seller, other.seller);
     }
 
@@ -119,7 +118,7 @@ public class Deal {
     public String toString() {
         StringBuilder builder = new StringBuilder();
         builder.append("Deal [products=");
-        builder.append(Arrays.toString(products));
+        builder.append(Arrays.toString(abstractProducts));
         builder.append(", seller=");
         builder.append(seller);
         builder.append(", bayer=");

@@ -1,4 +1,4 @@
-package by.it.academy.homework.lesson3;
+package by.it.academy.homework.lesson3.dataValidation;
 
 import java.util.Scanner;
 import java.util.regex.Matcher;
@@ -10,11 +10,9 @@ public class RegexpData {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-
         System.out.println("Enter date in dd/MM/yyyy");
         String scanData1 = scan.nextLine();
         Matcher matcherData1 = patternData1.matcher(scanData1);
-
         if (matcherData1.matches()) {
             System.out.println("The date matches the pattern");
         } else {
@@ -24,13 +22,11 @@ public class RegexpData {
         System.out.println("Enter date in dd-MM-yyyy");
         String scanData2 = scan.nextLine();
         Matcher matcherData2 = patternData2.matcher(scanData2);
-
         if (matcherData2.matches()) {
             System.out.println("The date matches the pattern");
         } else {
             System.out.println("The date does not match the pattern");
         }
-
         scan.close();
     }
 }

@@ -1,12 +1,10 @@
-package by.it.academy.homework.lesson3;
+package by.it.academy.homework.lesson3.classesParticipatingInDeal;
 
 import java.util.Objects;
 
-
-public class Car extends Product {
+public class Car extends AbstractProduct {
     String modelOfCar;
     int numberOfPassenger;
-
 
     public Car(String name, double price, int quantity, String modelOfCar, int numberOfPassenger) {
         super(name, price, quantity);

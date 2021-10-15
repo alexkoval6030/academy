@@ -3,7 +3,6 @@ package by.it.academy.homework.lesson1.task1;
 import java.util.Scanner;
 
 public class Task1 {
-
     private static final double PURCHASE_AMOUNT_DISCOUNT_NUMBER_1 = 100;
     private static final double DISCOUNT_SIZE_NUMBER_1 = 0.95;
     private static final double PURCHASE_AMOUNT_DISCOUNT_NUMBER_2 = 200;
@@ -17,7 +16,6 @@ public class Task1 {
     private static final int AGE_MAJORITY = 18;
 
     public static void main(String[] args) {
-
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter the purchase amount");
         double i = scan.nextDouble();

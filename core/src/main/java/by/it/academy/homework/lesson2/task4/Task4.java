@@ -3,9 +3,7 @@ package by.it.academy.homework.lesson2.task4;
 import java.util.Scanner;
 
 public class Task4 {
-
     public static void main(String[] args) {
-
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter a word consisting of an even number of characters: ");
         String firstWord = scan.nextLine();
@@ -18,7 +16,6 @@ public class Task4 {
         } else {
             System.out.println("Entered word or two words have an odd number of characters");
         }
-
         scan.close();
     }
 }

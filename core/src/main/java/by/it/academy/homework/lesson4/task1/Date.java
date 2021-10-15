@@ -10,13 +10,11 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Date {
-
     private Day day;
     private Month month;
     private Year year;
 
     public Date(Year year, Month month, Day day) {
-
         this.day = day;
         this.month = month;
         this.year = year;
@@ -47,13 +45,10 @@ public class Date {
             }
             return true;
         }
-
         return matcher.matches() || matcher1.matches();
     }
 
-
     public class Day {
-
         private int day;
 
         public Day(int day) {
@@ -106,7 +101,6 @@ public class Date {
     }
 
     public class Month {
-
         private int month;
 
         public Month(int month) {
@@ -159,7 +153,6 @@ public class Date {
     }
 
     public class Year {
-
         private int year;
 
         public Year(int year) {
@@ -273,5 +266,4 @@ public class Date {
         builder.append("]");
         return builder.toString();
     }
-
 }

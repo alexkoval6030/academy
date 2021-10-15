@@ -5,9 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class TimeComparison {
-
     public static <T> void addElementsToList(List<Integer> list) {
-
         long start = System.currentTimeMillis();
         for (int i = 0; i < 50_000_000; i++) {
 			list.add((int) (1 + Math.random() * 100));
@@ -29,7 +27,6 @@ public class TimeComparison {
         ArrayList<Integer> array = new ArrayList<>();
         addElementsToList(array);
 		selectRandomItemsFromList(array);
-
         LinkedList<Integer> linked = new LinkedList<>();
 		addElementsToList(linked);
 		selectRandomItemsFromList(linked);

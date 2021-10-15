@@ -3,7 +3,6 @@ package by.it.academy.homework.lesson7.task2;
 import java.time.LocalDate;
 
 public class User extends Person {
-
     public String login;
     public String email;
     private String password;

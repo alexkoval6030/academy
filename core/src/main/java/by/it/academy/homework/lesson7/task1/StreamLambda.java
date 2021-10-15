@@ -6,7 +6,6 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class StreamLambda {
-
     public static void main(String[] args) {
         Random random = new Random();
         Map<Long, String> streamLambda = Stream.generate(() -> random.nextInt(100))
@@ -20,6 +19,4 @@ public class StreamLambda {
         System.out.println(streamLambda);
         System.out.println(streamLambda.size());
     }
-
 }
-

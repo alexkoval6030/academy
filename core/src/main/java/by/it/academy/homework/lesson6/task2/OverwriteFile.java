@@ -5,21 +5,17 @@ import by.it.academy.homework.lesson6.FileAssistant;
 import java.io.*;
 
 public class OverwriteFile {
-
-    private final String inputFullFilePath = "java/by/it/academy/homework/lesson6/io2/text.txt";
-    private final String outputFilePath = "java/by/it/academy/homework/lesson6/io2/";
+    private final String inputFullFilePath = "io/lesson6/task2/text.txt";
+    private final String outputFilePath = "io/lesson6/task2/";
     private final String outputFileName = "result.txt";
 
     public static void main(String[] args) {
-
         new OverwriteFile().OverWriteFile();
-
     }
 
     private void OverWriteFile() {
         File inputFile = new File(inputFullFilePath);
         File outputFile = FileAssistant.addFail(outputFilePath, outputFileName);
-
         try (InputStream fis = new FileInputStream(inputFile);
              OutputStream fos = new FileOutputStream(outputFile)) {
             while (true) {
@@ -39,5 +35,4 @@ public class OverwriteFile {
             e.printStackTrace();
         }
     }
-
 }

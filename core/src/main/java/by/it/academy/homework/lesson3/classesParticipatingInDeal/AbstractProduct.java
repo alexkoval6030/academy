@@ -1,14 +1,14 @@
-package by.it.academy.homework.lesson3;
+package by.it.academy.homework.lesson3.classesParticipatingInDeal;
 
 import java.util.Objects;
 
-public abstract class Product {
+public abstract class AbstractProduct {
     protected String name;
     protected double price;
     protected int quantity;
     protected double calcPrice;
 
-    public Product(String name, double price, int quantity) {
+    public AbstractProduct(String name, double price, int quantity) {
         this.name = name;
         this.price = price;
         this.quantity = quantity;
@@ -44,10 +44,6 @@ public abstract class Product {
         this.quantity = quantity;
     }
 
-    public static final Comparator<Product> PRODUCT_COMPORATOR = new Comparator<Product>() {
-
-    };
-
     @Override
     public int hashCode() {
         return Objects.hash(name, price, quantity);
@@ -61,7 +57,7 @@ public abstract class Product {
             return false;
         if (getClass() != obj.getClass())
             return false;
-        Product other = (Product) obj;
+        AbstractProduct other = (AbstractProduct) obj;
         return Objects.equals(name, other.name)
                 && Double.doubleToLongBits(price) == Double.doubleToLongBits(other.price);
     }

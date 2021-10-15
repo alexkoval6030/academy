@@ -77,7 +77,6 @@ public class ArrayListHomework<T> {
 			System.out.println("Array index out of bounds");
 			return;
 		}
-
 		if (index < size) {
 			System.arraycopy(items, index + 1, items, index, size - index - 1);
 		}
