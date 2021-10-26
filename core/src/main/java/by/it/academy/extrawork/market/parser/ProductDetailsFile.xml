@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <name>Product details file</name>
+    <products>
+        <product name="BallpointPen">
+            <quantityInStorage>50</quantityInStorage>
+            <price>2.5</price>
+            <stockRatio>100</stockRatio>
+            <minimumStock>50</minimumStock>
+        </product>
+        <product name="Notebook">
+            <quantityInStorage>20</quantityInStorage>
+            <price>3.4</price>
+            <stockRatio>80</stockRatio>
+            <minimumStock>40</minimumStock>
+        </product>
+        <product name="Vodka">
+            <quantityInStorage>40</quantityInStorage>
+            <price>10.0</price>
+            <stockRatio>25</stockRatio>
+            <minimumStock>55</minimumStock>
+        </product>
+    </products>
+</root>
