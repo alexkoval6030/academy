@@ -8,11 +8,53 @@
             <stockRatio>100</stockRatio>
             <minimumStock>50</minimumStock>
         </product>
+        <product name="BoardGame">
+            <quantityInStorage>10</quantityInStorage>
+            <price>150.0</price>
+            <stockRatio>25</stockRatio>
+            <minimumStock>5</minimumStock>
+        </product>
+        <product name="Candy">
+            <quantityInStorage>75</quantityInStorage>
+            <price>0.5</price>
+            <stockRatio>200</stockRatio>
+            <minimumStock>100</minimumStock>
+        </product>
+        <product name="Car">
+            <quantityInStorage>3</quantityInStorage>
+            <price>50000.0</price>
+            <stockRatio>5</stockRatio>
+            <minimumStock>2</minimumStock>
+        </product>
+        <product name="Compass">
+            <quantityInStorage>60</quantityInStorage>
+            <price>25.0</price>
+            <stockRatio>40</stockRatio>
+            <minimumStock>20</minimumStock>
+        </product>
+        <product name="Hairbrush">
+            <quantityInStorage>500</quantityInStorage>
+            <price>15.0</price>
+            <stockRatio>750</stockRatio>
+            <minimumStock>400</minimumStock>
+        </product>
         <product name="Notebook">
             <quantityInStorage>20</quantityInStorage>
             <price>3.4</price>
             <stockRatio>80</stockRatio>
             <minimumStock>40</minimumStock>
+        </product>
+        <product name="Phone">
+            <quantityInStorage>125</quantityInStorage>
+            <price>345.0</price>
+            <stockRatio>125</stockRatio>
+            <minimumStock>80</minimumStock>
+        </product>
+        <product name="Scissors">
+            <quantityInStorage>45</quantityInStorage>
+            <price>30.0</price>
+            <stockRatio>90</stockRatio>
+            <minimumStock>45</minimumStock>
         </product>
         <product name="Vodka">
             <quantityInStorage>40</quantityInStorage>

@@ -14,10 +14,16 @@ public class ProductRepoImpl implements ProductRepo {
         return products;
     }
 
-    private ProductRepoImpl(){
+    @Override
+    public List<Product> addProduct(List<Product> productList) {
+        products.addAll(productList);
+        return products;
     }
 
-    public static ProductRepo getInstance(){
+    private ProductRepoImpl() {
+    }
+
+    public static ProductRepo getInstance() {
         return INSTANCE;
     }
 }

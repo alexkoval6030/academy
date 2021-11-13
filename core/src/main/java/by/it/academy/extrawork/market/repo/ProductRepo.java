@@ -5,4 +5,6 @@ import java.util.List;
 
 public interface ProductRepo {
     List<Product> getProducts();
+
+    List<Product> addProduct(List<Product> productList);
 }

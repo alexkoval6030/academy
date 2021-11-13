@@ -1,33 +1,32 @@
 package by.it.academy.extrawork.market.service.impl;
 
-import by.it.academy.extrawork.market.detais.Details;
-import by.it.academy.extrawork.market.detais.impl.DetailsImpl;
+import by.it.academy.extrawork.market.detais.DetailsRepo;
+import by.it.academy.extrawork.market.detais.impl.ProductDetailsRepo;
 import by.it.academy.extrawork.market.model.ProductDetails;
-import by.it.academy.extrawork.market.parser.SaxParserHandler;
+import by.it.academy.extrawork.market.parser.ProductDetailsSaxParserHandler;
 import by.it.academy.extrawork.market.service.ApplicationInitializer;
 import org.xml.sax.SAXException;
-
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 import java.io.File;
 import java.io.IOException;
-import java.util.List;
+import java.util.Map;
 
 public class ProductDetailsInitializerImpl implements ApplicationInitializer {
     private static final String FILE_NAME = "core/src/main/java/by/it/academy/extrawork/market/Parser/ProductDetailsFile.xml";
-    Details details = DetailsImpl.getInstance();
+    DetailsRepo details = ProductDetailsRepo.getInstance();
 
     @Override
     public void init() {
-        ProductDetailsInitializerImpl productDetailsInitializer = new ProductDetailsInitializerImpl();
-        List<ProductDetails> productDetailsList = productDetailsInitializer.parse();
-        details.getProductDetails().addAll(productDetailsList);
+        Map<String, ProductDetails> productDetailsMap = parse();
+        details.putProductDetails(productDetailsMap);
+        System.out.println("Products details successfully initialized");
     }
 
-    public List<ProductDetails> parse() {
+    public Map<String, ProductDetails> parse() {
         SAXParserFactory saxParserFactory = SAXParserFactory.newInstance();
-        SaxParserHandler saxParserHandler = new SaxParserHandler();
+        ProductDetailsSaxParserHandler saxParserHandler = new ProductDetailsSaxParserHandler();
         SAXParser saxParser = null;
         try {
             saxParser = saxParserFactory.newSAXParser();
@@ -40,7 +39,6 @@ public class ProductDetailsInitializerImpl implements ApplicationInitializer {
         } catch (SAXException | IOException e) {
             e.printStackTrace();
         }
-        System.out.println("Products details successfully initialized");
-        return saxParserHandler.getProductDetailsList();
+        return saxParserHandler.getProductDetailsByName();
     }
 }

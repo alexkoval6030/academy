@@ -4,10 +4,10 @@ import by.it.academy.extrawork.market.model.ProductDetails;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
-public class SaxParserHandler extends DefaultHandler {
+public class ProductDetailsSaxParserHandler extends DefaultHandler {
     private static final String TAG_PRODUCT = "product";
     private static final String TAG_QUANTITY = "quantityInStorage";
     private static final String TAG_PRICE = "price";
@@ -21,10 +21,10 @@ public class SaxParserHandler extends DefaultHandler {
     private int minStock;
     private String currentTagName;
     private Attributes currentAttributes;
-    private List<ProductDetails> productDetailsList = new ArrayList<>();
+    private Map<String, ProductDetails> productDetailsByName = new HashMap<>();
 
-    public List<ProductDetails> getProductDetailsList() {
-        return productDetailsList;
+    public Map<String, ProductDetails> getProductDetailsByName() {
+        return productDetailsByName;
     }
 
     @Override
@@ -37,8 +37,8 @@ public class SaxParserHandler extends DefaultHandler {
     public void endElement(String uri, String localName, String qName) throws SAXException {
         if (qName != null) {
             if (qName.equals(TAG_PRODUCT)) {
-                ProductDetails productDetails = new ProductDetails(name, quantity, price, stock, minStock);
-                productDetailsList.add(productDetails);
+                ProductDetails productDetails = new ProductDetails(quantity, price, stock, minStock);
+                productDetailsByName.put(name, productDetails);
             }
         }
         currentTagName = null;

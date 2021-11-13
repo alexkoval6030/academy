@@ -13,8 +13,7 @@ public class ProductDetails {
     public ProductDetails() {
     }
 
-    public ProductDetails(String name, int quantityInStorage, double price, int stockRatio, int minimumStock) {
-        this.name = name;
+    public ProductDetails(int quantityInStorage, double price, int stockRatio, int minimumStock) {
         this.quantityInStorage = quantityInStorage;
         this.price = price;
         this.stockRatio = stockRatio;
